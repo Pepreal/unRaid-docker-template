@@ -1,5 +1,5 @@
 # Custom Template for unRaid
-unRaid custom template for orginal teamspeak docker image
+unRaid custom template for orginal Teamspeak docker image
 
 I'm not a developer, the file was to learn how to work with dockerman.
 
