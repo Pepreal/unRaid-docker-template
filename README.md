@@ -8,7 +8,7 @@ cp teamSpeak-officialdocker.xml /boot/config/plugins/community.applications/priv
 Go to the Community Apps tab, go to private apps on the left and install from there.<br>
 Set ```AppData``` folder and ```accept``` the licence.<br>
 
-## Extra: 
+## Extras: 
 For importing an existing database and/or licence key.
 
 * Put the database and licence in the ```AppData``` folder and restart the docker. The docker will set the permissions in the ```Host Path``` on every start/restart.
