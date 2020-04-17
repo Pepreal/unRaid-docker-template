@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/TeamSpeak-Systems</Support>
   <Project>https://www.teamspeak.com</Project>
-  <Overview>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or licence key put the database and licence in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Overview>
+  <Overview>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Overview>
   <Category>Network:Voip</Category>
   <WebUI/>
   <TemplateURL/>
@@ -18,7 +18,7 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled></DateInstalled>
-  <Description>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or licence key put the database and licence in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Description>
+  <Description>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -135,6 +135,6 @@
   <Config Name="TS3SERVER_LOG_APPEND" Target="TS3SERVER_LOG_APPEND" Default="0" Mode="" Description="If this variable is set to 1, all new log entries are written into a single file per virtual server. If this set variable is set to 0, every time the server starts/restarts a new log file is created. We suggest setting this variable to 0." Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
   <Config Name="TS3SERVER_LOG_QUERY_COMMANDS" Target="TS3SERVER_LOG_QUERY_COMMANDS" Default="0" Mode="" Description="If this variable is set to 1, every query command that is sent to the server will be logged." Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
   <Config Name="TS3SERVER_DB_PLUGIN" Target="TS3SERVER_DB_PLUGIN" Default="0" Mode="" Description="This variable controls what kind of database the TeamSpeak server is using." Type="Variable" Display="advanced-hide" Required="false" Mask="false">ts3db_sqlite3</Config>
-  <Config Name="TS3SERVER_DB_PLUGINPARAMETER" Target="TS3SERVER_DB_PLUGINPARAMETER" Default="0" Mode="" Description="The content of the this variable is send as 'parameter' to the db plugin." Type="Variable" Display="advanced-hide" Required="false" Mask="false">/var/run/ts3server/ts3db.ini</Config>
+  <Config Name="TS3SERVER_DB_PLUGINPARAMETER" Target="TS3SERVER_DB_PLUGINPARAMETER" Default="0" Mode="" Description="The content of the this variable is sent as 'parameter' to the db plugin." Type="Variable" Display="advanced-hide" Required="false" Mask="false">/var/run/ts3server/ts3db.ini</Config>
   <Config Name="Teamspeak 'ini' Config Path" Target="/var/run/ts3server" Default="" Mode="rw" Description="Path where the ts3server.ini and ts3db.ini files are stored." Type="Path" Display="advanced-hide" Required="false" Mask="false"></Config>
 </Container>
