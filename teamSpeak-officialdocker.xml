@@ -18,7 +18,7 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled></DateInstalled>
-  <Description>Custom unRaid template for the official Teamspeak docker. If you have a license key put the license key in the AppData folder and restart the docker. The docker will set the permissions in the 'Host Path' on every restart. The same goes for the database.</Description>
+  <Description>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or licence key put the database and licence in the AppData folder and start the docker. The docker will set the permissions in the Host Path on every start/restart.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
