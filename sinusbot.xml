@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sinusbot</Name>
+  <Repository>sinusbot/docker</Repository>
+  <Registry>https://hub.docker.com/r/sinusbot/docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/SinusBot/docker</Support>
+  <Project/>
+  <Overview></Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI>http://[IP]:[PORT:8087]</WebUI>
+  <TemplateURL/>
+  <Icon>https://forum.sinusbot.com/sinusbot-quad.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8087</HostPort>
+        <ContainerPort>8087</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sinusbot/scripts/</HostDir>
+      <ContainerDir>/opt/sinusbot/scripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sinusbot/data/</HostDir>
+      <ContainerDir>/opt/sinusbot/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/opt/sinusbot/music</ContainerDir>
+      <Mode>ro,slave</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>UID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI Port" Target="8087" Default="8087" Mode="tcp" Description="TCP port for the webUI" Type="Port" Display="always" Required="true" Mask="false">8087</Config>
+  <Config Name="Data Path 1" Target="/opt/sinusbot/data" Default="/mnt/user/appdata/sinusbot/data/" Mode="rw" Description="Path where Sinusbot settings are stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/sinusbot/data/</Config>
+  <Config Name="Scripts Path 2" Target="/opt/sinusbot/scripts" Default="/mnt/user/appdata/sinusbot/scripts/" Mode="rw" Description="Path where Sinusbot scripts are stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/sinusbot/scripts/</Config>
+  <Config Name="PUID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Music Path" Target="/opt/sinusbot/music" Default="" Mode="ro,slave" Description="For external music folder. Dont forget to set this in config.ini 'ExternalFileBase ='" Type="Path" Display="advanced-hide" Required="false" Mask="false"></Config>
+</Container>
