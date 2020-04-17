@@ -11,7 +11,7 @@ If you want to use the template
 ## Extras: 
 For importing an existing database and/or licence key.
 
-* Put the database and licence in the ```AppData``` folder and restart the docker. The docker will set the permissions in the ```Host Path``` on every start/restart.
+* Put the database and licence in the ```AppData``` folder and start the docker. The docker will set the permissions in the ```Host Path``` on every start/restart.
 
 ## Links:
 [Teamspeak Github Page](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images)<br>
