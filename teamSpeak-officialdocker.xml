@@ -87,36 +87,36 @@
       <Name>TS3SERVER_DB_CLIENTKEEPDAYS</Name>
       <Mode/>
     </Variable>
-	<Variable>
-	  <Value>0</Value>
-	  <Name>TS3SERVER_LOG_APPEND</Name>
-	  <Mode/>
-	</Variable>
-	<Variable>
-	  <Value>0</Value>
-	  <Name>TS3SERVER_LOG_QUERY_COMMANDS</Name>
-	  <Mode/>
-	</Variable>
-	<Variable>
-	  <Value>/var/ts3server/</Value>
-	  <Name>TS3SERVER_LICENSEPATH</Name>
-	  <Mode/>
-	</Variable>
-	<Variable>
-	  <Value>300</Value>
-	  <Name>TS3SERVER_QUERY_TIMEOUT</Name>
-	  <Mode/>
-	</Variable>
-	<Variable>
-	  <Value>ts3db_sqlite3</Value>
-	  <Name>TS3SERVER_DB_PLUGIN</Name>
-	  <Mode/>
-	</Variable>
-	<Variable>
-	  <Value>/var/run/ts3server/ts3db.ini</Value>
-	  <Name>TS3SERVER_DB_PLUGINPARAMETER</Name>
-	  <Mode/>
-	</Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>TS3SERVER_LOG_APPEND</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>TS3SERVER_LOG_QUERY_COMMANDS</Name>
+      <Mode/>
+    </Variable>
+      <Variable>
+      <Value>/var/ts3server/</Value>
+      <Name>TS3SERVER_LICENSEPATH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>300</Value>
+      <Name>TS3SERVER_QUERY_TIMEOUT</Name>
+      <Mode/>
+   </Variable>
+   <Variable>
+      <Value>ts3db_sqlite3</Value>
+      <Name>TS3SERVER_DB_PLUGIN</Name>
+      <Mode/>
+   </Variable>
+   <Variable>
+      <Value>/var/run/ts3server/ts3db.ini</Value>
+      <Name>TS3SERVER_DB_PLUGINPARAMETER</Name>
+      <Mode/>
+   </Variable>
   </Environment>
   <Labels/>
   <Config Name="AppData Config Path" Target="/var/ts3server/" Default="" Mode="rw" Description="Path where the database is stored" Type="Path" Display="always" Required="true" Mask="false"></Config>
