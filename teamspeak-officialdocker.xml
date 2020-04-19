@@ -10,7 +10,7 @@
   <Project>https://www.teamspeak.com</Project>
   <Overview>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Overview>
   <Category>Network:Voip</Category>
-  <TemplateURL>https://github.com/Pepreal/TeamSpeak-unRaid-docker-template/blob/master/teamspeak-officialdocker.xml</TemplateURL>
+  <TemplateURL/>
   <Icon>https://pa2old.nl/pic/ts_stacked_bluelight.png</Icon>
   <Description>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Description>
   <Config Name="AppData Config Path" Target="/var/ts3server/" Default="" Mode="rw" Description="Path where the database is stored." Type="Path" Display="always" Required="true" Mask="false"></Config>
