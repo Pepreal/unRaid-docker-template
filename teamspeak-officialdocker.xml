@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/forum/58-docker-engine/</Support>
+  <Support></Support>
   <Project>https://www.teamspeak.com</Project>
   <Overview>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Overview>
   <Category>Network:Voip</Category>
