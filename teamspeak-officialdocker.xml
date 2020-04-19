@@ -4,121 +4,15 @@
   <Repository>teamspeak:latest</Repository>
   <Registry>https://hub.docker.com/_/teamspeak</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/TeamSpeak-Systems</Support>
+  <Support>https://forums.unraid.net/forum/58-docker-engine/</Support>
   <Project>https://www.teamspeak.com</Project>
   <Overview>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Overview>
   <Category>Network:Voip</Category>
-  <WebUI/>
-  <TemplateURL/>
-  <Icon>https://drive.google.com/uc?id=1BED1EoPQ4sHrTwx8j8l62kaz1liufSOL</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
+  <TemplateURL>https://github.com/Pepreal/TeamSpeak-unRaid-docker-template/blob/master/teamspeak-officialdocker.xml</TemplateURL>
+  <Icon>https://pa2old.nl/pic/ts_stacked_bluelight.png</Icon>
   <Description>Custom unRaid template for the official Teamspeak docker. For importing an existing database and/or license key put the database and license in the 'AppData' folder and start the docker. The docker will set the permissions in the 'Host Path' on every start/restart.</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9987</HostPort>
-        <ContainerPort>9987</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>10011</HostPort>
-        <ContainerPort>10011</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>30033</HostPort>
-        <ContainerPort>30033</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/var/ts3server/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/var/run/ts3server</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value></Value>
-      <Name>TS3SERVER_LICENSE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>9987</Value>
-      <Name>TS3SERVER_DEFAULT_VOICE_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>10011</Value>
-      <Name>TS3SERVER_QUERY_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>10022</Value>
-      <Name>TS3SERVER_QUERY_SSH_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>30033</Value>
-      <Name>TS3SERVER_FILETRANSFER_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>raw</Value>
-      <Name>TS3SERVER_QUERY_PROTOCOLS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>30</Value>
-      <Name>TS3SERVER_DB_CLIENTKEEPDAYS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0</Value>
-      <Name>TS3SERVER_LOG_APPEND</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0</Value>
-      <Name>TS3SERVER_LOG_QUERY_COMMANDS</Name>
-      <Mode/>
-    </Variable>
-      <Variable>
-      <Value>/var/ts3server/</Value>
-      <Name>TS3SERVER_LICENSEPATH</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>300</Value>
-      <Name>TS3SERVER_QUERY_TIMEOUT</Name>
-      <Mode/>
-   </Variable>
-   <Variable>
-      <Value>ts3db_sqlite3</Value>
-      <Name>TS3SERVER_DB_PLUGIN</Name>
-      <Mode/>
-   </Variable>
-   <Variable>
-      <Value>/var/run/ts3server/ts3db.ini</Value>
-      <Name>TS3SERVER_DB_PLUGINPARAMETER</Name>
-      <Mode/>
-   </Variable>
-  </Environment>
-  <Labels/>
   <Config Name="AppData Config Path" Target="/var/ts3server/" Default="" Mode="rw" Description="Path where the database is stored." Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="UDP - Voice Port" Target="9987" Default="9987" Mode="udp" Description="UDP voice port. Default=9987" Type="Port" Display="always" Required="true" Mask="false">9987</Config>
   <Config Name="TCP - Query Port:" Target="10011" Default="10011" Mode="tcp" Description="TCP query port. Default=10011" Type="Port" Display="always" Required="true" Mask="false">10011</Config>
