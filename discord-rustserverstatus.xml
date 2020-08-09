@@ -66,6 +66,7 @@ services:&#xD;
   <WebUI></WebUI>
   <TemplateURL></TemplateURL>
   <Icon>https://icon-library.com/images/rust-icon/rust-icon-23.jpg</Icon>
+  <DonateText>By: Pepreal</DonateText>
   <Description>Discord Rust Server status bot&#xD;
 &#xD;
 Create your discord-bot and invite it to your server:&#xD;
