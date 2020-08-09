@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>discord-rustserverstatus</Name>
+  <Repository>kenrisa/discord-rustserverstatus:latest</Repository>
+  <Registry>https://hub.docker.com/r/kenrisa/discord-rustserverstatus</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/kennethrisa/discord-rustserverstatus</Support>
+  <Project></Project>
+  <Overview>Discord Rust Server status bot	&#xD;
+&#xD;
+Create your discord-bot and invite it to your server:&#xD;
+&#xD;
+    https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&amp;amp;-getting-a-token&#xD;
+    The token you have to configure in config.json.&#xD;
+    Invite your bot to your discord server: https://discordapp.com/oauth2/authorize?&amp;amp;client_id=YOUR_CLIENT_ID_HERE&amp;amp;scope=bot&amp;amp;permissions=0&#xD;
+&#xD;
+Docker&#xD;
+&#xD;
+Using sourcequery:&#xD;
+docker run --name discord-rustserverstatus --restart=unless-stopped \&#xD;
+   -e token="your token here" \&#xD;
+   -e apiSite=4 \&#xD;
+   -e serverIp=1.1.1.1 \&#xD;
+   -e serverPort=28015 \&#xD;
+   -e roles="Owner" \&#xD;
+   kenrisa/discord-rustserverstatus:latest&#xD;
+&#xD;
+docker run --name discord-rustserverstatus --restart=unless-stopped \&#xD;
+   -e token=your_token_here \&#xD;
+   -e apiSite=1 \&#xD;
+   -e apiUrl="https://full uri here" \&#xD;
+   -e enableRcon=1 \&#xD;
+   -e rconhost=yourip \&#xD;
+   -e rconport=28016 \&#xD;
+   -e rconpass="yourpassword" \&#xD;
+   -e prefix="!" \&#xD;
+   -e roles="Owner" \&#xD;
+   -e queueMessage="currently waiting in queue" \&#xD;
+   -e statusType=""&#xD;
+   -e updateInterval="3" \&#xD;
+   kenrisa/discord-rustserverstatus:latest&#xD;
+&#xD;
+    Using docker-compose&#xD;
+&#xD;
+git clone https://github.com/kennethrisa/discord-rustserverstatus.git&#xD;
+docker-compose pull&#xD;
+docker-compose up -d&#xD;
+&#xD;
+Using with volumes and support for multiple bots:&#xD;
+Remove environment, and only have volumes:&#xD;
+---&#xD;
+version: '2'&#xD;
+services:&#xD;
+  bot:&#xD;
+    build: .&#xD;
+    image: kenrisa/discord-rustserverstatus&#xD;
+    container_name: discord-rustserverstatus&#xD;
+    restart: unless-stopped&#xD;
+    volumes:&#xD;
+      - ./config:/usr/src/app/config&#xD;
+&#xD;
+</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI></WebUI>
+  <TemplateURL></TemplateURL>
+  <Icon>https://icon-library.com/images/rust-icon/rust-icon-23.jpg</Icon>
+  <Description>Discord Rust Server status bot&#xD;
+&#xD;
+Create your discord-bot and invite it to your server:&#xD;
+&#xD;
+    https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&amp;amp;-getting-a-token&#xD;
+    The token you have to configure in config.json.&#xD;
+    Invite your bot to your discord server: https://discordapp.com/oauth2/authorize?&amp;amp;client_id=YOUR_CLIENT_ID_HERE&amp;amp;scope=bot&amp;amp;permissions=0&#xD;
+&#xD;
+Docker&#xD;
+&#xD;
+Using sourcequery:&#xD;
+docker run --name discord-rustserverstatus --restart=unless-stopped \&#xD;
+   -e token="your token here" \&#xD;
+   -e apiSite=4 \&#xD;
+   -e serverIp=1.1.1.1 \&#xD;
+   -e serverPort=28015 \&#xD;
+   -e roles="Owner" \&#xD;
+   kenrisa/discord-rustserverstatus:latest&#xD;
+&#xD;
+docker run --name discord-rustserverstatus --restart=unless-stopped \&#xD;
+   -e token=your_token_here \&#xD;
+   -e apiSite=1 \&#xD;
+   -e apiUrl="https://full uri here" \&#xD;
+   -e enableRcon=1 \&#xD;
+   -e rconhost=yourip \&#xD;
+   -e rconport=28016 \&#xD;
+   -e rconpass="yourpassword" \&#xD;
+   -e prefix="!" \&#xD;
+   -e roles="Owner" \&#xD;
+   -e queueMessage="currently waiting in queue" \&#xD;
+   -e statusType=""&#xD;
+   -e updateInterval="3" \&#xD;
+   kenrisa/discord-rustserverstatus:latest&#xD;
+&#xD;
+    Using docker-compose&#xD;
+&#xD;
+git clone https://github.com/kennethrisa/discord-rustserverstatus.git&#xD;
+docker-compose pull&#xD;
+docker-compose up -d&#xD;
+&#xD;
+Using with volumes and support for multiple bots:&#xD;
+Remove environment, and only have volumes:&#xD;
+---&#xD;
+version: '2'&#xD;
+services:&#xD;
+  bot:&#xD;
+    build: .&#xD;
+    image: kenrisa/discord-rustserverstatus&#xD;
+    container_name: discord-rustserverstatus&#xD;
+    restart: unless-stopped&#xD;
+    volumes:&#xD;
+      - ./config:/usr/src/app/config&#xD;
+&#xD;
+</Description>
+  <Config Name="Discord Token" Target="token" Default="" Mode="" Description="Your Token For Discord Bot" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="apiSite" Target="apiSite" Default="" Mode="" Description="apiSite" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Server IP" Target="serverIp" Default="" Mode="" Description="Ip of Rust Server" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="serverPort" Target="serverPort" Default="" Mode="" Description="Port of Rust Server" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="roles" Target="roles" Default="Owner" Mode="" Description="roles" Type="Variable" Display="always" Required="false" Mask="false">Owner</Config>
+</Container>
