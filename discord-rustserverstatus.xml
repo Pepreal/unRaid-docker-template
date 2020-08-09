@@ -122,7 +122,7 @@ services:&#xD;
 &#xD;
 </Description>
   <Config Name="Discord Token" Target="token" Default="" Mode="" Description="Your Token For Discord Bot" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="apiSite" Target="apiSite" Default="" Mode="" Description="apiSite" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="apiSite" Target="apiSite" Default="4" Mode="" Description="apiSite" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
   <Config Name="Server IP" Target="serverIp" Default="" Mode="" Description="Ip of Rust Server" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="serverPort" Target="serverPort" Default="" Mode="" Description="Port of Rust Server" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="roles" Target="roles" Default="Owner" Mode="" Description="roles" Type="Variable" Display="always" Required="false" Mask="false">Owner</Config>
