@@ -13,6 +13,7 @@
   <WebUI>http://[IP]:[PORT:8087]</WebUI>
   <TemplateURL></TemplateURL>
   <Icon>https://forum.sinusbot.com/sinusbot-quad.png</Icon>
+  <DonateText>By: Pepreal</DonateText>
   <Description>>Custom unRaid template for the official Sinusbot docker. PLEASE MAKE SURE TO CHANGE THE PASSWORD DIRECTLY AFTER YOUR FIRST LOGIN!!!</Description>
   <Config Name="WebUI Port" Target="8087" Default="8087" Mode="tcp" Description="TCP port for the webUI" Type="Port" Display="always" Required="true" Mask="false">8087</Config>
   <Config Name="AppData Config Path" Target="/opt/sinusbot/data" Default="/mnt/user/appdata/sinusbot-officialdocker/data/" Mode="rw" Description="Path where Sinusbot settings and data are stored" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/sinusbot-officialdocker/data/</Config>
