@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>TeamSpeak-Server_officialdocker</Name>
+  <Name>TeamSpeak-Server_official</Name>
   <Repository>teamspeak:latest</Repository>
   <Registry>https://hub.docker.com/_/teamspeak</Registry>
   <Network>bridge</Network>
