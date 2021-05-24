@@ -9,7 +9,7 @@
   <Overview>Vnstatd daemon to collect network stats for HTPCmanager based on the alpine image that supports many architectures (amd64, ARM32 for the Raspberry Pi and ARM64). This build is automatically pushed to DockerHub and has a multi-architecture manifest so it's possible to just docker pull carlosedp/transmission and the manifest will download the correct architecture.&#xD;
 &#xD;
 Check repository on Github</Overview>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/Pepreal/unRaid-docker-template/master/vnstatd.xml</TemplateURL>
   <Icon>https://wiki.amahi.org/images/7/76/Vnstat160120.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Description>Vnstatd daemon to collect network stats for HTPCmanager based on the alpine image that supports many architectures (amd64, ARM32 for the Raspberry Pi and ARM64). This build is automatically pushed to DockerHub and has a multi-architecture manifest so it's possible to just docker pull carlosedp/transmission and the manifest will download the correct architecture.&#xD;
